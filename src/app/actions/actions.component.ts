@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {UsersService} from '../users.service';
 
 @Component({
   selector: 'app-actions',
@@ -17,8 +18,11 @@ export class ActionsComponent implements OnInit {
   }
 
   public submitUserDetails(evt) {
-    // Todo Submit user
-    console.log(this.userName,this.userValue, this.userMessage);
+    // do nothing if dont have data in all the fields
+    if (!this.userName || !this.userMessage || !this.userValue) {
+      return;
+    }
+    UsersService.addUser(this.userName, this.userValue, this.userMessage );
   }
 
 }
