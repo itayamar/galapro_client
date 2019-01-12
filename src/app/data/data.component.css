@@ -1,0 +1,11 @@
+.data-component .user-container {
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+.data-component .user-info-container {
+  margin: 0 1em; }
+  .data-component .user-info-container .user-info td {
+    border: 1px solid;
+    padding: 0.2em; }
+
+/*# sourceMappingURL=data.component.css.map */

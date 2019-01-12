@@ -1,0 +1,17 @@
+.data-component {
+  .user-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .user-info-container {
+    margin: 0 1em;
+    .user-info {
+      td {
+        border: 1px solid;
+        padding: 0.2em;
+      }
+    }
+  }
+
+}

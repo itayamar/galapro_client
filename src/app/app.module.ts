@@ -5,14 +5,25 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ActionsComponent } from './actions/actions.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DataComponent } from './data/data.component';
+
+
+const appRoutes: Routes = [
+  { path: '', redirectTo: '/actions', pathMatch: 'full' },
+  { path: 'actions', component: ActionsComponent },
+  { path: 'data', component: DataComponent, },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActionsComponent
+    ActionsComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule
   ],

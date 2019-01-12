@@ -1,4 +1,15 @@
 <h1>
   {{title}}
-  <app-actions></app-actions>
 </h1>
+
+<ul class="nav">
+  <li role="presentation">
+    <a  routerLink="/actions" routerLinkActive="active">Actions</a>
+  </li>
+  <li role="presentation">
+    <a routerLink="/data" routerLinkActive="active">Data</a>
+  </li>
+</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

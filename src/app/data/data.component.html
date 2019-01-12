@@ -1,0 +1,19 @@
+<div class="data-component">
+  <h4>Users</h4>
+  <div class="user-list">
+    <div class="user-container" *ngFor="let user of users">
+      <strong class="user-name">{{user.name}}</strong>
+      <div class="user-info-container">
+        <table class="user-info">
+          <tbody>
+          <tr>
+            <td>{{user.value}}</td>
+            <td>{{user.message}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button>Sync</button>
+  </div>
+</div>
