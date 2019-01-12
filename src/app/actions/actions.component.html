@@ -1,0 +1,19 @@
+<div class="app-actions">
+  <form>
+    <div class="user-name-input-container">
+      <label>Name</label>
+      <input [(ngModel)]="userName" type="text" name="userName" required>
+    </div>
+    <div class="user-value-input-container">
+      <label>Chose a number</label>
+      <input [(ngModel)]="userValue" type="range" min="0" step="5" max="100" name="userValue" required>
+      <span>{{userValue}}</span>
+    </div>
+    <div class="user-message-input-container">
+      <label>Message</label>
+      <textarea [(ngModel)]="userMessage" rows="4" cols="50" name="userMessage" required></textarea>
+    </div>
+    <button class="submit-btn" (click)="submitUserDetails($event)" type="submit">Submit</button>
+  </form>
+  actions works!
+</div>
